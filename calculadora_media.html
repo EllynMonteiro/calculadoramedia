@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+	function escreva(frase) {
+
+			document.write(frase);
+
+		}
+
+	var nota1 = parseInt(prompt("Digite o valor da primeira nota: "));
+	var nota2 = parseInt(prompt("Digite o valor da segunda nota: "));
+	var nota3 = parseInt(prompt("Digite o valor da terceira nota: "));
+
+	var media = Math.round((nota1 + nota2 + nota3) / 3);
+
+	if (media >= 70) {
+
+		escreva ("Você foi aprovado, sua média foi: " + media);
+
+	} else if (media < 70 && media >= 50 ) {
+
+		escreva ("Você atingiu a média, mas precisa melhorar! Sua média está " + media);
+
+	} else {
+
+		escreva("Você está de recuperação, sua média foi: " + media);
+
+	}
+
+</script> 
